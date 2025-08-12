@@ -1,0 +1,179 @@
+<!--
+Politics Newspaper Template with Additional Images and Content
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The Daily Politico — Front Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --page-width:1100px;
+      --gutter:18px;
+      --accent:#111;
+      --muted:#666;
+    }
+    *{box-sizing:border-box}
+    body{font-family:'Open Sans',system-ui,Arial;line-height:1.4;margin:20px;background:#f3f3f3;color:#111}
+    .page{max-width:var(--page-width);margin:0 auto;background:#fff;padding:18px;border:1px solid #ddd}
+    .masthead{display:flex;align-items:center;justify-content:space-between;border-bottom:6px solid #111;padding:8px 0}
+    .title{font-family:'Merriweather',serif;font-size:44px;letter-spacing:2px}
+    .subtitle{font-size:12px;color:var(--muted);}
+    .meta{font-size:13px;text-align:right}
+    .ad{background:linear-gradient(90deg,#2b6cb0,#667eea);color:#fff;padding:12px;margin:12px 0;border-radius:6px;display:flex;align-items:center;justify-content:space-between}
+    .ad .left{font-weight:700}
+    .grid{display:grid;grid-template-columns:320px 1fr 300px;gap:var(--gutter);align-items:start}
+    .col-left{display:flex;flex-direction:column;gap:12px}
+    .small-article{background:#fafafa;padding:12px;border:1px solid #eee}
+    .small-article img{width:100%;height:auto;margin-bottom:6px}
+    .main-headline{padding:6px 12px;border-left:6px solid #111}
+    .main-headline h1{margin:6px 0;font-family:'Merriweather',serif;font-size:30px}
+    .byline{color:var(--muted);font-size:13px;margin-bottom:8px}
+    .hero{display:flex;gap:12px}
+    .hero img{width:60%;height:auto;border:1px solid #ddd}
+    .hero .lead{padding:6px;}
+    .lead p{color:#333}
+    .lead .summary{color:var(--muted)}
+    .col-right{display:flex;flex-direction:column;gap:12px}
+    .opinion{background:#fff4f0;padding:12px;border:1px solid #f2d7d5}
+    .opinion img{width:100%;height:auto;margin-bottom:6px}
+    .stories{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+    .story{background:#fafafa;padding:10px;border:1px solid #eee}
+    .story img{width:100%;height:auto;margin-bottom:6px}
+    .footer{border-top:1px solid #eee;margin-top:16px;padding-top:8px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between}
+    .badge{display:inline-block;background:#111;color:#fff;padding:4px 8px;font-size:12px;border-radius:3px}
+    .print-btn{background:#111;color:#fff;padding:8px 12px;border-radius:4px;border:none;cursor:pointer}
+    @media(max-width:1000px){
+      .grid{grid-template-columns:1fr;}
+      .hero{flex-direction:column}
+      .hero img{width:100%}
+      .col-right{order:3}
+      .col-left{order:2}
+    }
+  </style>
+</head>
+<body>
+  <div class="page" id="newspaper">
+    <header class="masthead">
+      <div>
+        <div class="title">THE DAILY POLITICO</div>
+        <div class="subtitle">Focused Coverage — Politics, Policy & Governance</div>
+      </div>
+      <div class="meta">
+        <div>MONDAY, AUGUST 11, 2025</div>
+        <div>CHENNAI CITY EDITION</div>
+      </div>
+    </header>
+
+    <div class="ad">
+      <div class="left">Campaign Special — Election watch: 24/7 Coverage</div>
+      <div class="right">Sponsored • <strong>VoteSmart</strong></div>
+    </div>
+
+    <div class="grid">
+      <aside class="col-left">
+        <div class="small-article">
+          <img src="https://via.placeholder.com/300x200" alt="state news">
+          <h4>State Roundup</h4>
+          <p>Local party wings gear up for the upcoming assembly by-elections. Candidates announced across 12 constituencies.</p>
+        </div>
+        <div class="small-article">
+          <img src="image/modi.jpeg" height="300" width="300" alt="policy image">
+          <h4>Policy Brief</h4>
+          <p>New draft of the electoral finance bill proposes realtime disclosure of campaign donations above ₹50,000.</p>
+        </div>
+        <div class="small-article">
+          <img src="https://via.placeholder.com/300x200" alt="data graph">
+          <h4>Data Corner</h4>
+          <p>Closer look: voter turnout trends in urban vs rural constituencies since 2016.</p>
+        </div>
+      </aside>
+
+      <main>
+        <section class="main-headline">
+          <div class="badge">POLITICS</div>
+          <h1>Opposition Unites: A New Coalition Forms Ahead of State Polls</h1>
+          <div class="byline">By Political Desk • New Delhi</div>
+        </section>
+        <div class="hero">
+          <img src="https://via.placeholder.com/600x400" alt="main rally">
+          <div class="lead">
+            <p class="summary">A patchwork alliance of regional parties today announced a seat-sharing agreement, marking the most extensive coalition in a decade. The pact aims to counter the ruling party's dominance in several key states.</p>
+            <p>The agreement, signed in New Delhi, includes commitments on local governance, economic packages for agriculture, and electoral reform. Analysts say the coalition faces challenges in harmonising distinct regional agendas.</p>
+            <p><em>Read more on pages 4–6 (State politics).</em></p>
+          </div>
+        </div>
+        <div class="stories">
+          <article class="story">
+                 <img src="image/abd.jpeg" height="150" width="250"alt="main rally">
+            
+            <h3>Interview: Coalition Strategist Speaks</h3>
+            <p>We speak to the campaign head on negotiation tactics and voter outreach strategy.</p>
+          </article>
+          <article class="story">
+            <img src="image/download ppp.jpeg" height="250" width="250" alt="scandal">
+            <h3>Scandal Watch</h3>
+            <p>Fresh accusations of misuse of public funds hit a sitting minister; probe demanded by cross-party MPs.</p>
+          </article>
+          <article class="story">
+            <img src="image/downloadyouth.jpeg" height="250" width="250" alt="youth politics">
+            <h3>Youth & Politics</h3>
+            <p>How social media campaigns are reshaping youth engagement in the elections.</p>
+          </article>
+          <article class="story">
+            <img src="image/images ac.jpeg" alt="fact check">
+            <h3>Fact Check</h3>
+            <p>Claims on the manifestos compared — what the numbers actually say.</p>
+          </article>
+        </div>
+        <div style="margin-top:12px;display:flex;gap:8px;align-items:center">
+          <button class="print-btn" onclick="window.print()">Print Front Page</button>
+          <div style="color:var(--muted);font-size:13px">Tip: Click headlines to expand in mobile view.</div>
+        </div>
+      </main>
+
+      <aside class="col-right">
+        <div class="opinion">
+          <img src="https://via.placeholder.com/280x180" alt="opinion">
+          <h4>Opinion</h4>
+          <strong>Why coalitions may not be enough</strong>
+          <p>By our Editorial Board — Building trust across diverse electorates remains the primary hurdle.</p>
+        </div>
+        <div class="small-article">
+          <img src="https://via.placeholder.com/280x180" alt="letters">
+          <h4>Letters</h4>
+          <p>Readers write in on the role of independent candidates and grassroots campaigning.</p>
+        </div>
+        <div class="small-article">
+          <img src="https://via.placeholder.com/280x180" alt="events">
+          <h4>Nearby</h4>
+          <p>Live events: Political town halls scheduled this weekend in Chennai, Coimbatore and Madurai.</p>
+        </div>
+      </aside>
+    </div>
+
+    <footer class="footer">
+      <div>© The Daily Politico • All rights reserved</div>
+      <div>Contact: editor@politico.example | Follow: @DailyPolitico</div>
+    </footer>
+  </div>
+  <script>
+    document.addEventListener('click', function(e){
+      var el = e.target.closest('.story h3');
+      if(!el) return;
+      var article = el.parentElement;
+      if(window.innerWidth < 1000){
+        var overlay = document.createElement('div');
+        overlay.style.position='fixed';overlay.style.top=0;overlay.style.left=0;overlay.style.right=0;overlay.style.bottom=0;overlay.style.background='rgba(0,0,0,0.6)';overlay.style.display='flex';overlay.style.alignItems='center';overlay.style.justifyContent='center';overlay.style.zIndex=9999;
+        var box = document.createElement('div');box.style.background='#fff';box.style.padding='18px';box.style.maxWidth='640px';box.style.maxHeight='80vh';box.style.overflow='auto';box.innerHTML = '<h2>'+el.textContent+'</h2>' + '<p>'+article.querySelector('p').textContent+'</p>' + '<div style="text-align:right;margin-top:12px"><button id="closeM">Close</button></div>';
+        overlay.appendChild(box);
+        document.body.appendChild(overlay);
+        document.getElementById('closeM').onclick = function(){document.body.removeChild(overlay)};
+      }
+    });
+  </script>
+</body>
+</html>
